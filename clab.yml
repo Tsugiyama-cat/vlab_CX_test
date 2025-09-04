@@ -9,7 +9,8 @@ topology:
       kind: aruba_aoscx
       image: vrnetlab/aruba_arubaos-cx:10.16.1006-hda   # ← あなたが作った “-hda” タグ
       mgmt-ipv4: 172.20.20.11
-      startup-config: configs/cx1.cfg   # 起動後に適用される最小コンフィグ
+      startup-config: https://raw.githubusercontent.com/Tsugiyama-cat/vlab_CX_test/main/configs/cx1.cfg
+   # 起動後に適用される最小コンフィグ
 
     client1:
       kind: linux
